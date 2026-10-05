@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>eikon parcel starter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+   
+<img class="bg" src="plane.jpg" alt="Avion en plein vol au coucher du soleil">
+<div class="frame">
+ 
+  <!-- Navigation -->
+  <nav aria-label="Navigation principale">
+    <ul>
+      <li><a href="#" aria-current="page">Home</a></li>
+      <li><a href="#">About us</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+ 
+  <h1>Ready for take off?</h1>
+ 
+  <!-- Filtres -->
+  <form class="booking" action="#">
+    <h2>Start booking your flight now</h2>
+ 
+    <div class="trip">
+      <label><input type="radio" name="trip" value="one" id="oneWay"> One way</label>
+      <label><input type="radio" name="trip" value="round" checked> Round trip</label>
+    </div>
+ 
+    <div class="row">
+      <div class="field route">
+        <div><small>From</small><input type="text" id="from" value="Geneva"></div>
+        <button type="button" class="swap" id="swap" aria-label="Inverser">⇄</button>
+        <div><small>To</small><input type="text" id="to" value="San Francisco"></div>
+      </div>
+      <div class="field"><small>From</small><input type="date" id="start" value="2027-05-31"></div>
+      <div class="field" id="untilField"><small>Until</small><input type="date" id="end" value="2027-06-15"></div>
+      <div class="field">
+        <small>Passengers</small>
+        <select id="pax">
+          <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+        </select>
+      </div>
+      <button class="search" type="submit">Search</button>
+    </div>
+  </form>
+</div>
+ 
+    <script src="js/main.js" type="module"></script>
+  </body>
+</html>
