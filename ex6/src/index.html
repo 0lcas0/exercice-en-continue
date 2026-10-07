@@ -4,221 +4,115 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flight results</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="scss/main.scss" />
-  </head>
-  <body>
-    <div class="page">
+    <link rel="stylesheet" href="./scss/main.scss">
+</head>
+<body>
+  <div class="page">
  
-    <!-- Search info : titre de niveau 2, sticky -->
     <aside class="search-info">
-      <h2 class="search-info__title">Search info</h2>
-      <p class="search-info__text">From <strong>Geneva</strong><br>to <strong>San Francisco</strong></p>
-      <p class="search-info__text">From <strong>31 May 2027</strong><br>to <strong>15 June 2027</strong></p>
-      <p class="search-info__text"><strong>1</strong> passenger</p>
-      <button class="btn btn--primary btn--small" type="button">Reset search</button>
+      <h2>Search info</h2>
+      <p>From <b>Geneva</b><br>to <b>San Francisco</b></p>
+      <p>From <b>31 May 2027</b><br>to <b>15 June 2027</b></p>
+      <p><b>1</b> passenger</p>
+      <button class="btn btn-small">Reset search</button>
     </aside>
  
-    <!-- Résultats -->
-    <main class="results">
-      <ul class="grid">
-      <li class="card">
-        <div class="card__img img_sansfransisco" role="img" aria-label="San Francisco">img_sansfransisco</div>
-        <h3 class="card__title">San Francisco</h3>
-        <p class="card__class">Premium economy</p>
-        <p class="card__meta">
-          <span class="card__info">
-            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.6 13.4l-7.2 7.2a2 2 0 0 1-2.8 0L3 13V3h10l7.6 7.6a2 2 0 0 1 0 2.8z"/><circle cx="7.5" cy="7.5" r="1"/></svg>
-            From <strong>900 CHF</strong>
-          </span>
-          <span class="card__info">
-            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5z"/></svg>
-            <strong>SFO</strong>
-          </span>
-        </p>
-        <div class="card__actions">
-          <button class="btn btn--primary btn--small card__cta" type="button">Search flight</button>
-          <button class="card__fav" type="button" aria-label="Add to favorites">
-            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-4.4-9.3-9A5.3 5.3 0 0 1 12 6a5.3 5.3 0 0 1 9.3 6C19 16.6 12 21 12 21z"/></svg>
-          </button>
+    <main>
+      <div class="grid">
+      <article class="card">
+        <img src="./assets/img/img_sansfransisco.webp" alt="Golden Gate Bridge, San Francisco">
+        <h3>San Francisco</h3>
+        <p class="muted">Premium economy</p>
+        <p>From <b>900 CHF</b> &nbsp; ✈ <b>SFO</b></p>
+        <div class="actions">
+          <button class="btn btn-small">Search flight</button>
+          <button class="heart" aria-label="Add to favorites">♡</button>
         </div>
-      </li>
-      <li class="card">
-        <div class="card__img img_sansfransisco" role="img" aria-label="San Francisco">img_sansfransisco</div>
-        <h3 class="card__title">San Francisco</h3>
-        <p class="card__class">Premium economy</p>
-        <p class="card__meta">
-          <span class="card__info">
-            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.6 13.4l-7.2 7.2a2 2 0 0 1-2.8 0L3 13V3h10l7.6 7.6a2 2 0 0 1 0 2.8z"/><circle cx="7.5" cy="7.5" r="1"/></svg>
-            From <strong>900 CHF</strong>
-          </span>
-          <span class="card__info">
-            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5z"/></svg>
-            <strong>SFO</strong>
-          </span>
-        </p>
-        <div class="card__actions">
-          <button class="btn btn--primary btn--small card__cta" type="button">Search flight</button>
-          <button class="card__fav" type="button" aria-label="Add to favorites">
-            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-4.4-9.3-9A5.3 5.3 0 0 1 12 6a5.3 5.3 0 0 1 9.3 6C19 16.6 12 21 12 21z"/></svg>
-          </button>
+      </article>
+      <article class="card">
+        <img src="./assets/img/img_sansfransisco.webp" alt="Golden Gate Bridge, San Francisco">
+        <h3>San Francisco</h3>
+        <p class="muted">Premium economy</p>
+        <p>From <b>900 CHF</b> &nbsp; ✈ <b>SFO</b></p>
+        <div class="actions">
+          <button class="btn btn-small">Search flight</button>
+          <button class="heart" aria-label="Add to favorites">♡</button>
         </div>
-      </li>
-      <li class="card">
-        <div class="card__img img_sansfransisco" role="img" aria-label="San Francisco">img_sansfransisco</div>
-        <h3 class="card__title">San Francisco</h3>
-        <p class="card__class">Premium economy</p>
-        <p class="card__meta">
-          <span class="card__info">
-            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.6 13.4l-7.2 7.2a2 2 0 0 1-2.8 0L3 13V3h10l7.6 7.6a2 2 0 0 1 0 2.8z"/><circle cx="7.5" cy="7.5" r="1"/></svg>
-            From <strong>900 CHF</strong>
-          </span>
-          <span class="card__info">
-            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5z"/></svg>
-            <strong>SFO</strong>
-          </span>
-        </p>
-        <div class="card__actions">
-          <button class="btn btn--primary btn--small card__cta" type="button">Search flight</button>
-          <button class="card__fav" type="button" aria-label="Add to favorites">
-            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-4.4-9.3-9A5.3 5.3 0 0 1 12 6a5.3 5.3 0 0 1 9.3 6C19 16.6 12 21 12 21z"/></svg>
-          </button>
+      </article>
+      <article class="card">
+        <img src="./assets/img/img_sansfransisco.webp" alt="Golden Gate Bridge, San Francisco">
+        <h3>San Francisco</h3>
+        <p class="muted">Premium economy</p>
+        <p>From <b>900 CHF</b> &nbsp; ✈ <b>SFO</b></p>
+        <div class="actions">
+          <button class="btn btn-small">Search flight</button>
+          <button class="heart" aria-label="Add to favorites">♡</button>
         </div>
-      </li>
-      <li class="card">
-        <div class="card__img img_sansfransisco" role="img" aria-label="San Francisco">img_sansfransisco</div>
-        <h3 class="card__title">San Francisco</h3>
-        <p class="card__class">Premium economy</p>
-        <p class="card__meta">
-          <span class="card__info">
-            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.6 13.4l-7.2 7.2a2 2 0 0 1-2.8 0L3 13V3h10l7.6 7.6a2 2 0 0 1 0 2.8z"/><circle cx="7.5" cy="7.5" r="1"/></svg>
-            From <strong>900 CHF</strong>
-          </span>
-          <span class="card__info">
-            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5z"/></svg>
-            <strong>SFO</strong>
-          </span>
-        </p>
-        <div class="card__actions">
-          <button class="btn btn--primary btn--small card__cta" type="button">Search flight</button>
-          <button class="card__fav" type="button" aria-label="Add to favorites">
-            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-4.4-9.3-9A5.3 5.3 0 0 1 12 6a5.3 5.3 0 0 1 9.3 6C19 16.6 12 21 12 21z"/></svg>
-          </button>
+      </article>
+      <article class="card">
+        <img src="./assets/img/img_sansfransisco.webp" alt="Golden Gate Bridge, San Francisco">
+        <h3>San Francisco</h3>
+        <p class="muted">Premium economy</p>
+        <p>From <b>900 CHF</b> &nbsp; ✈ <b>SFO</b></p>
+        <div class="actions">
+          <button class="btn btn-small">Search flight</button>
+          <button class="heart" aria-label="Add to favorites">♡</button>
         </div>
-      </li>
-      <li class="card">
-        <div class="card__img img_sansfransisco" role="img" aria-label="San Francisco">img_sansfransisco</div>
-        <h3 class="card__title">San Francisco</h3>
-        <p class="card__class">Premium economy</p>
-        <p class="card__meta">
-          <span class="card__info">
-            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.6 13.4l-7.2 7.2a2 2 0 0 1-2.8 0L3 13V3h10l7.6 7.6a2 2 0 0 1 0 2.8z"/><circle cx="7.5" cy="7.5" r="1"/></svg>
-            From <strong>900 CHF</strong>
-          </span>
-          <span class="card__info">
-            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5z"/></svg>
-            <strong>SFO</strong>
-          </span>
-        </p>
-        <div class="card__actions">
-          <button class="btn btn--primary btn--small card__cta" type="button">Search flight</button>
-          <button class="card__fav" type="button" aria-label="Add to favorites">
-            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-4.4-9.3-9A5.3 5.3 0 0 1 12 6a5.3 5.3 0 0 1 9.3 6C19 16.6 12 21 12 21z"/></svg>
-          </button>
+      </article>
+      <article class="card">
+        <img src="./assets/img/img_sansfransisco.webp" alt="Golden Gate Bridge, San Francisco">
+        <h3>San Francisco</h3>
+        <p class="muted">Premium economy</p>
+        <p>From <b>900 CHF</b> &nbsp; ✈ <b>SFO</b></p>
+        <div class="actions">
+          <button class="btn btn-small">Search flight</button>
+          <button class="heart" aria-label="Add to favorites">♡</button>
         </div>
-      </li>
-      <li class="card">
-        <div class="card__img img_sansfransisco" role="img" aria-label="San Francisco">img_sansfransisco</div>
-        <h3 class="card__title">San Francisco</h3>
-        <p class="card__class">Premium economy</p>
-        <p class="card__meta">
-          <span class="card__info">
-            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.6 13.4l-7.2 7.2a2 2 0 0 1-2.8 0L3 13V3h10l7.6 7.6a2 2 0 0 1 0 2.8z"/><circle cx="7.5" cy="7.5" r="1"/></svg>
-            From <strong>900 CHF</strong>
-          </span>
-          <span class="card__info">
-            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5z"/></svg>
-            <strong>SFO</strong>
-          </span>
-        </p>
-        <div class="card__actions">
-          <button class="btn btn--primary btn--small card__cta" type="button">Search flight</button>
-          <button class="card__fav" type="button" aria-label="Add to favorites">
-            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-4.4-9.3-9A5.3 5.3 0 0 1 12 6a5.3 5.3 0 0 1 9.3 6C19 16.6 12 21 12 21z"/></svg>
-          </button>
+      </article>
+      <article class="card">
+        <img src="./assets/img/img_sansfransisco.webp" alt="Golden Gate Bridge, San Francisco">
+        <h3>San Francisco</h3>
+        <p class="muted">Premium economy</p>
+        <p>From <b>900 CHF</b> &nbsp; ✈ <b>SFO</b></p>
+        <div class="actions">
+          <button class="btn btn-small">Search flight</button>
+          <button class="heart" aria-label="Add to favorites">♡</button>
         </div>
-      </li>
-      <li class="card">
-        <div class="card__img img_sansfransisco" role="img" aria-label="San Francisco">img_sansfransisco</div>
-        <h3 class="card__title">San Francisco</h3>
-        <p class="card__class">Premium economy</p>
-        <p class="card__meta">
-          <span class="card__info">
-            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.6 13.4l-7.2 7.2a2 2 0 0 1-2.8 0L3 13V3h10l7.6 7.6a2 2 0 0 1 0 2.8z"/><circle cx="7.5" cy="7.5" r="1"/></svg>
-            From <strong>900 CHF</strong>
-          </span>
-          <span class="card__info">
-            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5z"/></svg>
-            <strong>SFO</strong>
-          </span>
-        </p>
-        <div class="card__actions">
-          <button class="btn btn--primary btn--small card__cta" type="button">Search flight</button>
-          <button class="card__fav" type="button" aria-label="Add to favorites">
-            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-4.4-9.3-9A5.3 5.3 0 0 1 12 6a5.3 5.3 0 0 1 9.3 6C19 16.6 12 21 12 21z"/></svg>
-          </button>
+      </article>
+      <article class="card">
+        <img src="./assets/img/img_sansfransisco.webp" alt="Golden Gate Bridge, San Francisco">
+        <h3>San Francisco</h3>
+        <p class="muted">Premium economy</p>
+        <p>From <b>900 CHF</b> &nbsp; ✈ <b>SFO</b></p>
+        <div class="actions">
+          <button class="btn btn-small">Search flight</button>
+          <button class="heart" aria-label="Add to favorites">♡</button>
         </div>
-      </li>
-      <li class="card">
-        <div class="card__img img_sansfransisco" role="img" aria-label="San Francisco">img_sansfransisco</div>
-        <h3 class="card__title">San Francisco</h3>
-        <p class="card__class">Premium economy</p>
-        <p class="card__meta">
-          <span class="card__info">
-            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.6 13.4l-7.2 7.2a2 2 0 0 1-2.8 0L3 13V3h10l7.6 7.6a2 2 0 0 1 0 2.8z"/><circle cx="7.5" cy="7.5" r="1"/></svg>
-            From <strong>900 CHF</strong>
-          </span>
-          <span class="card__info">
-            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5z"/></svg>
-            <strong>SFO</strong>
-          </span>
-        </p>
-        <div class="card__actions">
-          <button class="btn btn--primary btn--small card__cta" type="button">Search flight</button>
-          <button class="card__fav" type="button" aria-label="Add to favorites">
-            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-4.4-9.3-9A5.3 5.3 0 0 1 12 6a5.3 5.3 0 0 1 9.3 6C19 16.6 12 21 12 21z"/></svg>
-          </button>
+      </article>
+      <article class="card">
+        <img src="./assets/img/img_sansfransisco.webp" alt="Golden Gate Bridge, San Francisco">
+        <h3>San Francisco</h3>
+        <p class="muted">Premium economy</p>
+        <p>From <b>900 CHF</b> &nbsp; ✈ <b>SFO</b></p>
+        <div class="actions">
+          <button class="btn btn-small">Search flight</button>
+          <button class="heart" aria-label="Add to favorites">♡</button>
         </div>
-      </li>
-      <li class="card">
-        <div class="card__img img_sansfransisco" role="img" aria-label="San Francisco">img_sansfransisco</div>
-        <h3 class="card__title">San Francisco</h3>
-        <p class="card__class">Premium economy</p>
-        <p class="card__meta">
-          <span class="card__info">
-            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.6 13.4l-7.2 7.2a2 2 0 0 1-2.8 0L3 13V3h10l7.6 7.6a2 2 0 0 1 0 2.8z"/><circle cx="7.5" cy="7.5" r="1"/></svg>
-            From <strong>900 CHF</strong>
-          </span>
-          <span class="card__info">
-            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5z"/></svg>
-            <strong>SFO</strong>
-          </span>
-        </p>
-        <div class="card__actions">
-          <button class="btn btn--primary btn--small card__cta" type="button">Search flight</button>
-          <button class="card__fav" type="button" aria-label="Add to favorites">
-            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-4.4-9.3-9A5.3 5.3 0 0 1 12 6a5.3 5.3 0 0 1 9.3 6C19 16.6 12 21 12 21z"/></svg>
-          </button>
+      </article>
+      <article class="card">
+        <img src="./assets/img/img_sansfransisco.webp" alt="Golden Gate Bridge, San Francisco">
+        <h3>San Francisco</h3>
+        <p class="muted">Premium economy</p>
+        <p>From <b>900 CHF</b> &nbsp; ✈ <b>SFO</b></p>
+        <div class="actions">
+          <button class="btn btn-small">Search flight</button>
+          <button class="heart" aria-label="Add to favorites">♡</button>
         </div>
-      </li>
-      </ul>
-      <button class="btn btn--primary" type="button">See more results</button>
+      </article>
+      </div>
+      <button class="btn more">See more results</button>
     </main>
  
   </div>
-
-    <script src="js/main.js" type="module"></script>
-  </body>
+</body>
 </html>
