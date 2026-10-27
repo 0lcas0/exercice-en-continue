@@ -1,4 +1,14 @@
-@import "./_font.css";
-@import "./_base.css";
-@import "./_layout.css";
-@import "./modules/_example.css";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+}
+
+img,
+video {
+  display: block;
+}

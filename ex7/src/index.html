@@ -3,11 +3,66 @@
   <head>
     <meta charset="utf-8" />
     <title>eikon parcel starter</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <h1>Hello world</h1>
+    <footer class="footer">
+    <div class="footer__container">
+ 
+      <div class="footer__top">
+ 
+        <section class="footer__newsletter">
+          <h2 class="footer__title">Stay connected</h2>
+          <p class="footer__text">Be the first to receive updates on our flights and promotions.</p>
+ 
+          <form class="footer__form" action="#" method="post">
+            <div class="field">
+              <label class="field__label" for="email">E-mail</label>
+              <input class="field__input" type="email" id="email" name="email" placeholder="Enter your e-mail" required>
+            </div>
+            <button class="button button--secondary" type="submit">Subscribe</button>
+          </form>
+        </section>
+ 
+        <div class="footer__navs">
+ 
+          <nav class="footer__nav" aria-labelledby="footer-menu-title">
+            <h3 class="footer__nav-title" id="footer-menu-title">Menu</h3>
+            <ul class="footer__list">
+              <li><a class="footer__link" href="#">Home</a></li>
+              <li><a class="footer__link" href="#">About</a></li>
+              <li><a class="footer__link" href="#">Services</a></li>
+              <li><a class="footer__link" href="#">Contact</a></li>
+            </ul>
+          </nav>
+ 
+          <nav class="footer__nav" aria-labelledby="footer-other-title">
+            <h3 class="footer__nav-title" id="footer-other-title">Other</h3>
+            <ul class="footer__list">
+              <li><a class="footer__link" href="#">Privacy policy</a></li>
+              <li><a class="footer__link" href="#">Terms and service</a></li>
+              <li><a class="footer__link" href="#">Cookie setting</a></li>
+            </ul>
+          </nav>
+ 
+        </div>
+      </div>
+ 
+      <nav class="footer__social" aria-label="Social networks">
+        <ul class="footer__list footer__list--row">
+          <li><a class="footer__link" href="#">LinkedIn</a></li>
+          <li><a class="footer__link" href="#">Instagram</a></li>
+          <li><a class="footer__link" href="#">Facebook</a></li>
+          <li><a class="footer__link" href="#">Threads</a></li>
+        </ul>
+      </nav>
+ 
+    </div>
+  </footer>
 
     <script src="js/main.js" type="module"></script>
   </body>
