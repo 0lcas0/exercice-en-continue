@@ -1,6 +1,6 @@
 :root {
-  --color-page-bg: #b5bac0;
-  --color-footer-bg: #eceef0;
+  --color-page-bg: #ffffff;
+  --color-footer-bg: #ffffff;
   --color-footer-container-bg: #777877;
   --color-input-bg: #232323;
   --color-white: #ffffff;
@@ -27,8 +27,11 @@ video {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   margin: 0;
-  padding: 90px;
+  padding: 90px 90px 0;
   background-color: var(--color-page-bg);
   font-family: var(--font-family);
   font-size: 16px; 
@@ -63,6 +66,7 @@ ul {
  
 .footer {
   width: fit-content;
+  margin-top: auto;
   padding: 30px;
   background-color: var(--color-footer-bg);
   color: var(--color-white);
